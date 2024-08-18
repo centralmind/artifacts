@@ -1,2 +1,3 @@
-# artifacts
-GenAI Artifact Viewer React Component
+# Artifact Viewer for Generative AI
+
+
