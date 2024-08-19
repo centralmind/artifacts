@@ -23,11 +23,11 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build:prod": "npm test && npm run prettier && npm run lint && npm run build",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "test": "jest --config jestconfig.json",
-    "prepare": "npm test && npm run prettier && npm run lint && npm run build",
-    "prepublishOnly": "npm run prepare"
+    "prepublishOnly": "npm run build:prod"
   },
   "peerDependencies": {
     "react": ">=16"
