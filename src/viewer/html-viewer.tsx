@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { HtmlPreset } from "../presets/types";
 
-const INDEX_FILES = ["index.html", "index.htm"];
+const INDEX_FILES = ["/index.html", "/index.htm"];
 
 export interface HtmlViewerProps {
   preset: HtmlPreset;
