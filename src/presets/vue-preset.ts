@@ -15,10 +15,10 @@ export const vuePreset: BuilderPreset = {
   },
   files: {
     "/style.css": "",
-    "/App.vue": `<template><div><h1>The application is empty.</h1></div></template>`,
+    "/app.vue": `<template><div><h1>The application is empty.</h1><h2>File /app.vue not found</h2></div></template>`,
     "/main.ts": `import { createApp } from 'vue'
 import './style.css'
-import App from './App.vue'
+import App from './app.vue'
 
 createApp(App).mount('#app')
 `,

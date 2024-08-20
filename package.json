@@ -9,9 +9,13 @@
     "vue",
     "generative ai",
     "genai",
-    "artifacts"
+    "artifacts",
+    "tailwindcss",
+    "tailwind",
+    "shadcnui",
+    "shadcn"
   ],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/centralmind/artifacts",
   "bugs": "https://github.com/centralmind/artifacts/issues",
   "license": "MIT",

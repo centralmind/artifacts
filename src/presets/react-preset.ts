@@ -17,7 +17,7 @@ export const reactPreset: BuilderPreset = {
   files: {
     "/.misc/react-shim.ts": `import * as React from "react"; export { React };`,
     "/main.css": "",
-    "/app.tsx": `export default function App() { return (<div><h1>The application is empty.</h1></div>); }`,
+    "/app.tsx": `export default function App() { return (<div><h1>The application is empty.</h1><h2>File /app.tsx not found</h2></div>); }`,
     "/main.tsx": (context: BuilderContext) => {
       const includes = context.includes.map((path) => `import '${path}';`).join("\n");
 
