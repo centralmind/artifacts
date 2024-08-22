@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["node_modules", "dist", ".eslintrc"],
+  "ignorePatterns": ["node_modules", ".eslintrc", "dist", "samples"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
