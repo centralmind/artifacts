@@ -27,6 +27,6 @@ h1 {
 `,
 };
 
-export default function VuePage() {
+export function VuePage() {
   return <ArtifactViewer files={files} />;
 }

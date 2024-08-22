@@ -17,6 +17,6 @@ export default function App() {
 }`,
 };
 
-export default function ReactPage() {
+export function ReactPage() {
   return <ArtifactViewer files={files} />;
 }

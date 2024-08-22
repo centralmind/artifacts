@@ -17,6 +17,6 @@ const files = {
   `,
 };
 
-export default function HtmlPage() {
+export function HtmlPage() {
   return <ArtifactViewer files={files} />;
 }
