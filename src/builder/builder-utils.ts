@@ -96,7 +96,7 @@ export abstract class BuilderUtils {
       }
 
       const stripped = BuilderUtils.stripEnd("/", path);
-      for (const suffix of BuilderConstants.SUFFIXES) {
+      for (const suffix of BuilderConstants.DEFAULT_SUFFIXES) {
         const current = `${stripped}${suffix}`;
 
         if (paths.has(current)) {
