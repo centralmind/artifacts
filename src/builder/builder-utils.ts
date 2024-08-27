@@ -40,31 +40,13 @@ export abstract class BuilderUtils {
   }
 
   static stripStart(start: string | string[], str: string) {
-    if (!Array.isArray(start)) {
-      start = [start];
-    }
-
-    for (const val of start) {
-      if (str.startsWith(val)) {
-        str = str.slice(val.length);
-      }
-    }
-
-    return str;
+    const starts = Array.isArray(start) ? start : [start];
+    return starts.reduce((s, val) => (val && s.startsWith(val) ? s.slice(val.length) : s), str);
   }
 
   static stripEnd(end: string | string[], str: string) {
-    if (!Array.isArray(end)) {
-      end = [end];
-    }
-
-    for (const val of end) {
-      if (str.endsWith(val)) {
-        str = str.slice(0, str.length - val.length);
-      }
-    }
-
-    return str;
+    const ends = Array.isArray(end) ? end : [end];
+    return ends.reduce((s, val) => (val && s.endsWith(val) ? s.slice(0, -val.length) : s), str);
   }
 
   static async hashString(input: string): Promise<string> {
